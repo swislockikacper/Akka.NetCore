@@ -1,0 +1,17 @@
+@api = https://localhost:5001
+
+### Create new product
+POST {{api}}/api/products
+content-type: application/json
+
+{
+    "name": "Product",
+    "cost": 200,
+    "amount": 10
+}
+
+### Get products
+GET {{api}}/api/products
+
+### Get product by id
+GET {{api}}/api/products/e69245d8-c8a1-46f5-8f81-7d9b03298b69
